@@ -1,0 +1,7 @@
+export const BOARD = "BOARD";
+export const CLICKED_ARRAY = "CLICKED_ARRAY";
+export const ADD_LETTER = "ADD_LETTER";
+export const REMOVE_LETTER = "REMOVE_LETTER";
+export const UPDATE_SCORE = "UPDATE_SCORE";
+export const REMOVE_WORD = "REMOVE_WORD";
+export const REMOVE_CLICKEDARRAY = "REMOVE_CLICKEDARRAY"

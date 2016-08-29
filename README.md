@@ -77,11 +77,11 @@ Gameplay involves clicking on dice one by one to build up a word. You can only c
 
 ### III. Scoring
 
-Point values for words scored in Boggle are determined by the length of the word submitted. There is an array of the 1000 most common english words as a json file in `dictionary.json` check the validity of the submitted word against this array. 
+Point values for words scored in Boggle are determined by the length of the word submitted. There is an array of the 1000 most common english words as a json file in `dictionary.json` check the validity of the submitted word against this array.
 
 * Words already submitted score no points (and do not appear in the score list a second time).
 * Submitted words are scored as follows based on the length of the word:
-    * 1-2 letters: 0 points
+    * 1-2 letters: 1 points
     * 3-4 letters: 1 point
     * 5 letters: 2 points
     * 6 letters: 3 points

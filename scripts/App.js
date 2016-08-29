@@ -1,10 +1,32 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import BoggleBoard from './BoggleBoard';
+import Score from './Score';
+import Title from '../specification/title.png';
+import * as Actions from '../actions/boardActions';
 
-export default class App extends Component {
+class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentWillMount () {
+    this.props.newBoard();
+  }
+
   render() {
     return (
-      // Add your component markup and other subcomponent references here.
-      <h1>Hello, World!</h1>
+      <div className="board">
+        <img src = {Title} className="title"/>
+        <BoggleBoard
+          store={this.props}
+        />
+        <Score
+          scores={this.props.score.scores}
+        />
+      </div>
     );
   }
 }
+
+export default connect(state => state, Actions)(App);
